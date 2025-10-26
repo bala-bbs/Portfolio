@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bala Subrahmanyam - QA Analyst Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            color: #764ba2;
+            font-size: 1.5em;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #667eea;
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .summary {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .company-name {
+            font-size: 1.3em;
+            color: #764ba2;
+            font-weight: 600;
+        }
+
+        .date {
+            color: #888;
+            font-style: italic;
+        }
+
+        .experience-item ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .experience-item li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .project {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .project h4 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .project ul {
+            margin-left: 20px;
+        }
+
+        .project li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h4 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-category p {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .education-item h4 {
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .education-item p {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .section {
+                padding: 25px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px 5px 5px 0;
+        }
+
+        .availability {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bala Subrahmanyam</h1>
+            <h2>QA Analyst</h2>
+            <div class="availability">✓ Open to Remote | Willing to Relocate</div>
+            <div class="contact-info">
+                <a href="tel:6300512296">📞 6300512296</a>
+                <a href="mailto:subrahmanyam.project@gmail.com">✉️ subrahmanyam.project@gmail.com</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h3>Professional Summary</h3>
+            <p class="summary">
+                QA Analyst with 3 years of hands-on experience in software testing. Skilled in using tools such as Jira for defect tracking, Postman for API testing, and PostgreSQL for database validation. Proficient in creating and executing test plans, developing test strategies, and performing end-to-end testing to ensure application stability. Strong in identifying, documenting, and tracking defects while collaborating with teams to improve software quality.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Professional Experience</h3>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <div class="company-name">SRS LIVE Technologies Pvt Ltd (SabPaisa)</div>
+                        <div style="color: #667eea; font-weight: 600; margin-top: 5px;">QA Analyst</div>
+                    </div>
+                    <div class="date">OCT 2022 – Present</div>
+                </div>
+                <ul>
+                    <li>Designed and executed manual test cases to ensure software functionality, usability and performance</li>
+                    <li>Identified and documented defects and issues, providing clear and concise bug reports to development teams</li>
+                    <li>Participated in sprint planning, daily stand-ups, and sprint retrospectives to ensure alignment with project goals</li>
+                    <li>Conducted regression testing to verify bug fixes and ensure no new issues were introduced</li>
+                    <li>Utilized test management tool JIRA to track and manage test cases and defects for APIs testing utilizing Postman tool</li>
+                    <li>Assisted in the creation of test plans and test strategies for various projects</li>
+                    <li>Participated in user acceptance testing (UAT) to validate that the software meets business requirements</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Key Projects</h3>
+            
+            <div class="project">
+                <h4>Fraud Risk Management</h4>
+                <p style="color: #666; margin-bottom: 15px; font-style: italic;">Risk management tool to detect and prevent fraud in payment gateway operations, ensuring compliance with RBI guidelines</p>
+                <ul>
+                    <li>Analyzed requirements and created detailed test scenarios & cases</li>
+                    <li>Performed functional, regression, API, and UI testing for merchant onboarding and transaction monitoring</li>
+                    <li>Validated fraud detection rules, alerts, and case management workflows</li>
+                    <li>Conducted SQL data validation on large transaction logs for fraud accuracy</li>
+                    <li>Prepared test reports and worked with developers/product teams on defect resolution</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h4>COB (Client Onboarding)</h4>
+                <p style="color: #666; margin-bottom: 15px; font-style: italic;">Merchant onboarding system with KYC and business verification</p>
+                <ul>
+                    <li>Validated onboarding workflows and real-time transaction visibility</li>
+                    <li>Created and executed functional and API test cases</li>
+                    <li>Performed UI and database testing using Postman & SQL</li>
+                    <li>Logged and tracked issues in Jira, collaborating with developers for timely fixes</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h4>Settlepaisa</h4>
+                <p style="color: #666; margin-bottom: 15px; font-style: italic;">Platform for automated transaction split and settlement across stakeholders</p>
+                <ul>
+                    <li>Reviewed requirements and specifications for accuracy</li>
+                    <li>Designed and executed test cases with proper test data</li>
+                    <li>Performed API testing using Postman and backend validation with SQL</li>
+                    <li>Conducted end-to-end functional and UI testing</li>
+                    <li>Reported bugs and suggested improvements to developers and managers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Testing Types</h4>
+                    <p>Functional Testing, Manual Testing, API Testing, Regression Testing, UAT</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Testing Tools</h4>
+                    <p>Jira, Bugzilla, Postman, Playwright</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Databases & Programming</h4>
+                    <p>PostgreSQL, MySQL, Python</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Other Skills</h4>
+                    <p>Test Case Design, Defect Tracking, Agile Methodologies</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+            <div class="education-item">
+                <h4>Master of Business Administration (M.B.A)</h4>
+                <p>JNTUK University</p>
+            </div>
+            <div class="education-item">
+                <h4>Bachelor of Science (B.SC) - Computers</h4>
+                <p>Vidyakendram Degree College</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Bala Subrahmanyam | QA Analyst Portfolio</p>
+        </footer>
+    </div>
+</body>
+</html>
